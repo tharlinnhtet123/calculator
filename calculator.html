@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator Exercise</h1>
+    <p>
+        <input id="f_number" type="text" placeholder="first number">
+    </p>
+    <p>
+        <input id="s_number" type="text" placeholder="second number">
+    </p>
+    <p>
+        Your Answer is: <span id="answer"></span>
+    </p>
+    <p>
+        <input onclick="calc()" type="button" value="+">
+    </p>
+</body>
+<script>
+    function calc(){
+        var num1 = document.getElementById("f_number").value;
+        var num2 = document.getElementById("s_number").value;
+        var result = parseInt(num1)+parseInt(num2);
+         //console.log(result)
+        document.getElementById("answer").innerHTML=result;
+    }
+</script>
+</html>
